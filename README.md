@@ -1,4 +1,5 @@
 # docker-cronicle-docker
+Workflow scheduler to run docker jobs just like cron, but inside own container, with Cronicle in docker.
 Run dockerized Cronicle cron jobs in docker container.
 
 # Supported tags
@@ -24,6 +25,7 @@ docker run \
         -v $PWD/data:/opt/cronicle/data:rw \
         -v $PWD/logs:/opt/cronicle/logs:rw \
         -v $PWD/plugins:/opt/cronicle/plugins:rw \
+        -v $PWD/app:/app:rw \
         --hostname localhost \
         -p 3012:3012\
         --name cronicle \
@@ -44,6 +46,7 @@ The web UI will be available at: http://localhost:3012
 | /opt/cronicle/data | Volume for data |
 | /opt/cronicle/logs | Volume for logs |
 | /opt/cronicle/plugins | Volume for plugins |
+| /app | Volume for additional files if needed by jobs |
 
 ## Configuration
 
