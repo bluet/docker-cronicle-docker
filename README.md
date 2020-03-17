@@ -4,6 +4,8 @@
 Workflow scheduler to run docker jobs just like cron, but inside own container, with Cronicle in docker.
 Run dockerized Cronicle cron jobs in docker container.
 
+Docker Hub: https://hub.docker.com/r/bluet/cronicle-docker
+
 # Supported tags
 
 * `0.8.38`, `latest` [Dockerfile](https://raw.githubusercontent.com/bluet/docker-cronicle-docker/master/docker/Dockerfile)
@@ -82,10 +84,12 @@ and restart the Docker container:
 ## Web UI credentials
 The default credentials for the web interface are: `admin` / `admin`
 
-# Reference
-https://github.com/jhuckaby/Cronicle
-https://github.com/belsander/docker-cronicle
 
+
+# Reference
+- Docker Hub: https://hub.docker.com/r/bluet/cronicle-docker
+- https://github.com/jhuckaby/Cronicle
+- https://github.com/belsander/docker-cronicle
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbluet%2Fdocker-cronicle-docker.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbluet%2Fdocker-cronicle-docker?ref=badge_large)
