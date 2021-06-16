@@ -1,5 +1,5 @@
 # FROM       alpine:latest
-FROM       docker:stable
+FROM       docker:19
 LABEL      maintainer="BlueT - Matthew Lien - 練喆明 <bluet@bluet.org>"
 
 # Docker defaults
