@@ -3,9 +3,10 @@
 ROOT_DIR=/opt/cronicle
 CONF_DIR=$ROOT_DIR/conf
 BIN_DIR=$ROOT_DIR/bin
-LIB_DIR=$ROOT_DIR/lib
 # DATA_DIR needs to be the same as the exposed Docker volume in Dockerfile
 DATA_DIR=$ROOT_DIR/data
+# LOGS_DIR needs to be the same as the exposed Docker volume in Dockerfile
+LOGS_DIR=$ROOT_DIR/logs
 # PLUGINS_DIR needs to be the same as the exposed Docker volume in Dockerfile
 PLUGINS_DIR=$ROOT_DIR/plugins
 
@@ -37,6 +38,13 @@ fi
 
 # Run cronicle with unprivileged user
 # chown -R cronicle:cronicle data/ logs/
+
+# remove old lock file. resolves #9
+PID_FILE=$LOGS_DIR/cronicled.pid
+if [ -f "$PID_FILE" ]; then
+    echo "Removing old PID file: $PID_FILE"
+    rm -f $PID_FILE
+fi
 
 if [ -n "$1" ];
 then
