@@ -9,7 +9,8 @@ Run dockerized Cronicle cron jobs in docker container.
 
 # Supported tags
 
-* `0.8.38`, `latest` [Dockerfile](https://raw.githubusercontent.com/bluet/docker-cronicle-docker/master/docker/Dockerfile)
+* [Tags](https://hub.docker.com/r/bluet/cronicle-docker/tags) 
+* [Dockerfile](https://raw.githubusercontent.com/bluet/docker-cronicle-docker/master/docker/Dockerfile)
 
 # Usage
 
