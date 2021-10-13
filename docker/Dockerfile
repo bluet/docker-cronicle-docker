@@ -5,8 +5,9 @@ LABEL      maintainer="BlueT - Matthew Lien - 練喆明 <bluet@bluet.org>"
 ENV        CRONICLE_base_app_url 'http://localhost:3012'
 ENV        CRONICLE_WebServer__http_port 3012
 ENV        CRONICLE_WebServer__https_port 443
+ENV        EDITOR=nano
 
-RUN        apk add --no-cache nodejs npm git curl wget perl bash perl-pathtools tar procps tini
+RUN        apk add --no-cache nodejs npm git curl wget perl bash perl-pathtools tar procps tini nano
 # RUN        apk add --no-cache docker nodejs npm git curl wget perl bash perl-pathtools tar procps tini
 RUN        curl -s https://raw.githubusercontent.com/jhuckaby/Cronicle/master/bin/install.js | node
 
