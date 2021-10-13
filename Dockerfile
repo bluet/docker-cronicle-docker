@@ -1,4 +1,4 @@
-FROM       docker:20.10.9
+FROM       docker:20.10
 LABEL      maintainer="BlueT - Matthew Lien - 練喆明 <bluet@bluet.org>"
 
 # Docker defaults
