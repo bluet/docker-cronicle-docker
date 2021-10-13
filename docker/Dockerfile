@@ -9,7 +9,7 @@ ENV        CRONICLE_WebServer__https_port 443
 ENV        EDITOR=nano
 
 # wget and tar packages are already included in base image
-RUN        apk add --no-cache nodejs npm git curl perl bash perl-pathtools procps nano tini
+RUN        apk add --no-cache nodejs npm git curl wget perl bash perl-pathtools tar procps tini nano
 RUN        mkdir -p /opt/cronicle \
         && cd /opt/cronicle \
         && curl -L https://github.com/jhuckaby/Cronicle/archive/v${CRONICLE_VERSION}.tar.gz | tar zxvf - --strip-components 1 \
