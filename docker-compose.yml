@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  cronicle:
+    image: bluet/cronicle-docker:latest
+    container_name: cronicle
+    hostname: cronicle
+    # environment:
+      # - TZ=Asia/Taipei
+      # - CRONICLE_base_app_url=http://cronicle/
+    ports:
+      - "3012:3012"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /data/docker/cronicle/data:/opt/cronicle/data
+      - /data/docker/cronicle/logs:/opt/cronicle/logs
+      - /data/docker/cronicle/plugins:/opt/cronicle/plugins
+      - /data/docker/cronicle/workloads/app:/app
+    restart: unless-stopped
+# dns-proxy-server helps mapping http://cronicle/ to your container IP http://172.16.xx.xx/
+#  dps:
+#    image: defreitas/dns-proxy-server
+#    container_name: 'dps'
+#    ports:
+#      - '0.0.0.0:5380:5380'
+#    hostname: dps
+#    environment:
+#      - MG_RESOLVCONF=/host/resolve/stub-resolv.conf
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#      - /run/systemd/resolve:/host/resolve
