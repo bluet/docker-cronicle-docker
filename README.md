@@ -1,4 +1,5 @@
 # docker-cronicle-docker
+[![Docker Pulls](https://img.shields.io/docker/pulls/bluet/cronicle-docker.svg)](https://shields.io/)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbluet%2Fdocker-cronicle-docker.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbluet%2Fdocker-cronicle-docker?ref=badge_shield)
 
 Workflow scheduler to run docker jobs just like cron, but inside own container, with Cronicle in docker.
