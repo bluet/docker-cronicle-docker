@@ -110,7 +110,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://www.winstonspencer.com/"><img src="https://avatars.githubusercontent.com/u/3476702?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Winston Spencer</b></sub></a><br /><a href="https://github.com/bluet/docker-cronicle-docker/commits?author=winstonspencer" title="Code">💻</a></td>
-    <td align="center"><a href="https://moshegrunwald.com"><img src="https://avatars.githubusercontent.com/u/34072688?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Moshe Grunwald</b></sub></a><br /><a href="https://github.com/bluet/docker-cronicle-docker/commits?author=TheBestMoshe" title="Code">💻</a> <a href="#ideas-TheBestMoshe" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/bluet/docker-cronicle-docker/pulls?q=is%3Apr+reviewed-by%3ATheBestMoshe" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://moshegrunwald.com"><img src="https://avatars.githubusercontent.com/u/34072688?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Moshe Grunwald</b></sub></a><br /><a href="https://github.com/bluet/docker-cronicle-docker/commits?author=TheBestMoshe" title="Code">💻</a> </td>
   </tr>
 </table>
 
