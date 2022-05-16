@@ -13,6 +13,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "TheBestMoshe",
+      "name": "Moshe Grunwald",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34072688?v=4",
+      "profile": "https://moshegrunwald.com",
+      "contributions": [
+        "code",
+        "ideas",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
