@@ -1,6 +1,6 @@
 # docker-cronicle-docker
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![Docker Pulls](https://img.shields.io/docker/pulls/bluet/cronicle-docker.svg)](https://shields.io/)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbluet%2Fdocker-cronicle-docker.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbluet%2Fdocker-cronicle-docker?ref=badge_shield)
@@ -110,6 +110,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://www.winstonspencer.com/"><img src="https://avatars.githubusercontent.com/u/3476702?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Winston Spencer</b></sub></a><br /><a href="https://github.com/bluet/docker-cronicle-docker/commits?author=winstonspencer" title="Code">💻</a></td>
+    <td align="center"><a href="https://moshegrunwald.com"><img src="https://avatars.githubusercontent.com/u/34072688?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Moshe Grunwald</b></sub></a><br /><a href="https://github.com/bluet/docker-cronicle-docker/commits?author=TheBestMoshe" title="Code">💻</a> <a href="#ideas-TheBestMoshe" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/bluet/docker-cronicle-docker/pulls?q=is%3Apr+reviewed-by%3ATheBestMoshe" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
