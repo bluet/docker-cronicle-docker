@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "winstonspencer",
+      "name": "Winston Spencer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3476702?v=4",
+      "profile": "https://www.winstonspencer.com/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "docker-cronicle-docker",
+  "projectOwner": "bluet",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
