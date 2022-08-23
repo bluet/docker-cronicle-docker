@@ -1,12 +1,13 @@
 #!/bin/bash
 
-VERSION=0.9.9
+VERSION=0.9.10
 
 docker build -t bluet/cronicle-docker .
 docker scan bluet/cronicle-docker:latest
 
 docker tag bluet/cronicle-docker:latest bluet/cronicle-docker:${VERSION}
 git tag "${VERSION}" -a -m "cronicle ${VERSION}"
+git push
 git push --tags
 
 # Fixes busybox trigger error https://github.com/tonistiigi/xx/issues/36#issuecomment-926876468
