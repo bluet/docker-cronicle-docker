@@ -18,7 +18,7 @@ docker buildx create --use
 while true; do
         read -p "Have I Updated VERSION Info? (Is current VERSION=${VERSION} ?) [y/N]" yn
         case $yn in
-                [Yy]* ) docker buildx build -t bluet/cronicle-docker:latest -t bluet/cronicle-docker:${VERSION} --platform linux/amd64,linux/arm64/v8 --push .; break;;
+                [Yy]* ) docker buildx build -t bluet/cronicle-docker:latest -t bluet/cronicle-docker:${VERSION} --platform linux/amd64,linux/arm64/v8 --pull --push .; break;;
                 [Nn]* ) exit;;
                 * ) echo "";;
         esac
