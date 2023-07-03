@@ -6,7 +6,8 @@ services:
     hostname: cronicle
     # environment:
       # - TZ=Asia/Taipei
-      # - CRONICLE_base_app_url=http://cronicle/
+      # - CRONICLE_base_app_url=https://my.cronicle.com/
+      # - CRONICLE_client__custom_live_log_socket_url=https://my.cronicle.com/
     ports:
       - "3012:3012"
     volumes:
