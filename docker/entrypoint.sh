@@ -19,8 +19,6 @@ export CRONICLE_foreground=1
 # Only run setup when setup needs to be done
 if [ ! -f $DATA_DIR/.setup_done ]
 then
-  $BIN_DIR/control.sh setup
-
   cp $CONF_DIR/config.json $CONF_DIR/config.json.origin
 
   if [ -f $DATA_DIR/config.json.import ]
@@ -28,6 +26,8 @@ then
     # Move in custom configuration
     cp $DATA_DIR/config.json.import $CONF_DIR/config.json
   fi
+
+  $BIN_DIR/control.sh setup
 
   # Create plugins directory
   mkdir -p $PLUGINS_DIR
