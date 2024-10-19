@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=0.9.61
+VERSION=0.9.6-1
 
 docker build --pull -t bluet/cronicle-docker .
 #docker scan bluet/cronicle-docker:latest
@@ -21,7 +21,7 @@ docker tag bluet/cronicle-docker:latest bluet/cronicle-docker:${VERSION}
 while true; do
         read -p "Is VERSION=${VERSION} the current latest version? (We're going to build multi-platform images and push) [y/N]" yn
         case $yn in
-                [Yy]* ) docker buildx buildi --builder cloud-bluet-test -t bluet/cronicle-docker:latest -t bluet/cronicle-docker:${VERSION} --platform linux/amd64,linux/arm64/v8 --pull --push .; break;;
+                [Yy]* ) docker buildx build --builder cloud-bluet-test -t bluet/cronicle-docker:latest -t bluet/cronicle-docker:${VERSION} --platform linux/amd64,linux/arm64/v8 --pull --push .; break;;
                 [Nn]* ) break;;
                 * ) echo "";;
         esac
