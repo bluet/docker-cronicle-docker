@@ -5,8 +5,12 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/bluet/cronicle-docker.svg)](https://shields.io/)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbluet%2Fdocker-cronicle-docker.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbluet%2Fdocker-cronicle-docker?ref=badge_shield)
 
-Workflow scheduler to run docker jobs just like cron, but inside own container, with Cronicle in docker.
-Run dockerized Cronicle cron jobs in docker container.
+Workflow scheduler to run docker jobs just like cron,  
+and *each job runs inside **its own containers***,  
+with Cronicle in docker.
+
+Run dockerized Cronicle (corn) jobs in docker container.  
+Or just *run a **prebuilt docker image*** as your task/job.
 
 - GitHub: https://github.com/bluet/docker-cronicle-docker
 - Docker Hub: https://hub.docker.com/r/bluet/cronicle-docker
