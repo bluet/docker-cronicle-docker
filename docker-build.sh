@@ -3,7 +3,8 @@
 VERSION=0.9.61
 
 docker build --pull -t bluet/cronicle-docker .
-docker scan bluet/cronicle-docker:latest
+#docker scan bluet/cronicle-docker:latest
+docker scout quickview bluet/cronicle-docker:latest
 
 docker tag bluet/cronicle-docker:latest bluet/cronicle-docker:${VERSION}
 
