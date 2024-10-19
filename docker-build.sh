@@ -5,6 +5,7 @@ VERSION=0.9.61-2
 docker build --pull -t bluet/cronicle-docker .
 #docker scan bluet/cronicle-docker:latest
 docker scout quickview bluet/cronicle-docker:latest
+grype bluet/cronicle-docker:latest | grep -i -E '(High|Critical)'
 
 docker tag bluet/cronicle-docker:latest bluet/cronicle-docker:${VERSION}
 
