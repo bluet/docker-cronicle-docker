@@ -1,4 +1,4 @@
-FROM       docker:24.0
+FROM       docker:27
 LABEL      maintainer="BlueT - Matthew Lien - 練喆明 <bluet@bluet.org>"
 
 # Docker defaults
