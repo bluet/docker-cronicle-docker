@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=0.9.63
+VERSION=0.9.68
 
 docker build --pull -t bluet/cronicle-docker .
 #docker scan bluet/cronicle-docker:latest
