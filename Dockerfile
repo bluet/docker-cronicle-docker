@@ -2,7 +2,7 @@ FROM       docker:27
 LABEL      maintainer="BlueT - Matthew Lien - 練喆明 <bluet@bluet.org>"
 
 # Docker defaults
-ENV        CRONICLE_VERSION=0.9.73
+ENV        CRONICLE_VERSION=0.9.76
 ENV        CRONICLE_base_app_url='http://localhost:3012'
 ENV        CRONICLE_WebServer__http_port=3012
 ENV        CRONICLE_WebServer__https_port=443
