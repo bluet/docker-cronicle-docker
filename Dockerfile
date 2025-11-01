@@ -10,7 +10,7 @@ ENV        CRONICLE_WebServer__https_port=443
 ENV        EDITOR=nano
 
 RUN if [ -z "$CRONICLE_VERSION" ]; then \
-        echo 'Environment variable CRONICLE_VERSION must be specified. Exiting.'; \
+        echo 'Build argument CRONICLE_VERSION must be specified. Exiting.'; \
         exit 1; \
     fi
 
