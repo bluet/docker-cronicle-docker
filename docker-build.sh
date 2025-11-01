@@ -2,7 +2,7 @@
 
 VERSION=0.9.77
 
-docker build --pull -t bluet/cronicle-docker .
+docker build --pull --build-arg CRONICLE_VERSION=${VERSION} -t bluet/cronicle-docker .
 #docker scan bluet/cronicle-docker:latest
 docker scout quickview bluet/cronicle-docker:latest
 grype bluet/cronicle-docker:latest | grep -i -E '(High|Critical)'
@@ -22,7 +22,7 @@ docker tag bluet/cronicle-docker:latest bluet/cronicle-docker:${VERSION}
 while true; do
         read -p "Is VERSION=${VERSION} the current latest version? (We're going to build multi-platform images and push) [y/N]" yn
         case $yn in
-                [Yy]* ) docker buildx build --builder cloud-bluet-test -t bluet/cronicle-docker:latest -t bluet/cronicle-docker:${VERSION} --platform linux/amd64,linux/arm64/v8 --pull --push .; break;;
+                [Yy]* ) docker buildx build --build-arg CRONICLE_VERSION=${VERSION} --builder cloud-bluet-test -t bluet/cronicle-docker:latest -t bluet/cronicle-docker:${VERSION} --platform linux/amd64,linux/arm64/v8 --pull --push .; break;;
                 [Nn]* ) break;;
                 * ) echo "";;
         esac

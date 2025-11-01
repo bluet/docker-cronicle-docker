@@ -2,11 +2,17 @@ FROM       docker:27
 LABEL      maintainer="BlueT - Matthew Lien - 練喆明 <bluet@bluet.org>"
 
 # Docker defaults
-ENV        CRONICLE_VERSION=0.9.77
+ARG        CRONICLE_VERSION
+ENV        CRONICLE_VERSION=$CRONICLE_VERSION
 ENV        CRONICLE_base_app_url='http://localhost:3012'
 ENV        CRONICLE_WebServer__http_port=3012
 ENV        CRONICLE_WebServer__https_port=443
 ENV        EDITOR=nano
+
+RUN if [ -z "$CRONICLE_VERSION" ]; then \
+        echo 'Build argument CRONICLE_VERSION must be specified. Exiting.'; \
+        exit 1; \
+    fi
 
 # install updates and security patches while installing new packages
 # Ref: https://github.com/docker/docs/pull/12571
